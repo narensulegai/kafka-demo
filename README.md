@@ -3,6 +3,7 @@
 Sample code to setup Kafka with NodeJS
 
 Setps to setup Kafka locally https://medium.com/@Ankitthakur/apache-kafka-installation-on-mac-using-homebrew-a367cdefd273
+Configure you local setting using .env file
 
 ```
 node nodeServer.js # runs on port 5000
