@@ -35,7 +35,7 @@ async function kafka() {
 
     const send = async (topic, msg) => {
         const messages = [{value: JSON.stringify(msg)}]
-        console.log(`Sending messages to topic ${topic}`, messages);
+        // console.log(`Sending messages to topic ${topic}`, messages);
         producer.send({topic, messages});
     }
 
