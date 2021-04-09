@@ -5,7 +5,7 @@ const modules = require('./modules');
 (async () => {
     const k = await kafka();
     k.subscribe(topics.API_CALL, ({ fn, params, token }) => {
-        console.log("Kafka server", fn, params, token);
+        // console.log("Kafka server", fn, params, token);
         modules[fn](...params)
             .then(
                 (resp) => {

@@ -60,7 +60,7 @@ async function kafka() {
 
     const awaitCallbacks = {};
     subscribe(allTopics.API_RESP, ({token, resp, success}) => {
-        console.log(`Received message from topic ${allTopics.API_RESP}`, resp);
+        // console.log(`Received message from topic ${allTopics.API_RESP}`, resp);
         // awaitCallbacks can be lost on restart, or in kafka server mode
         if (awaitCallbacks.hasOwnProperty(token)) {
             awaitCallbacks[token][success ? 0 : 1](resp);
