@@ -1,4 +1,7 @@
+
 # Kafka Demo
+
+![KafkaWorkflow](https://user-images.githubusercontent.com/436710/114246741-3755d880-9948-11eb-8ddf-e096d8017c5a.png)
 
 Sample code to setup Kafka with NodeJS
 
@@ -19,6 +22,4 @@ curl --location --request POST 'localhost:5000/sum' \
     "a":1,
     "b":4
 }'
-
 ```
-![KafkaWorkflow](https://user-images.githubusercontent.com/436710/114245777-f52b9780-9945-11eb-9ced-907e979fcf66.png)
